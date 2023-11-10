@@ -95,7 +95,7 @@ if 'combined' in st.session_state:
         st.write('UPI column has null values')
         st.session_state['errors'] = True
     if edited_df["Patient ID"] == "0000":
-        st.write('Patient ID is 0000 sos the row is being dropped now')
+        st.write('Patient ID is 0000 so the row is dropped now')
         edited_df = edited_df[edited_df["Patient ID"] != "0000"]
 ##############################################
 if 'errors' not in st.session_state:
